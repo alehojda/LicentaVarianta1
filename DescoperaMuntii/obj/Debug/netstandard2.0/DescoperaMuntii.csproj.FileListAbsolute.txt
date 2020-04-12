@@ -1,0 +1,17 @@
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\bin\Debug\netstandard2.0\DescoperaMuntii.deps.json
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\bin\Debug\netstandard2.0\DescoperaMuntii.dll
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\DescoperaMuntii.csprojAssemblyReference.cache
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\DescoperaMuntii.AssemblyInfoInputs.cache
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\DescoperaMuntii.AssemblyInfo.cs
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\bin\Debug\netstandard2.0\ref\DescoperaMuntii.dll
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\bin\Debug\netstandard2.0\DescoperaMuntii.pdb
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\DescoperaMuntii.dll
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\ref\DescoperaMuntii.dll
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\DescoperaMuntii.pdb
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\DescoperaMuntii.csproj.CoreCompileInputs.cache
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\AreasPage.xaml.g.cs
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Nina\source\repos\DescoperaMuntii\DescoperaMuntii\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
