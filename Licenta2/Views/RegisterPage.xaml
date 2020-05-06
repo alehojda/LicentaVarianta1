@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Licenta2.Views.RegisterPage" BackgroundColor="White">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="blueColor">#1E90FF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+    <StackLayout VerticalOptions="Center"
+                 Margin="20" x:Name="containerStackLayout" >
+
+        <Image x:Name="registerImage" 
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"
+               Margin="0, 0 , 0, 50"/>
+            <Entry x:Name="NumeEntry" Placeholder="Nume"
+               TextColor="{StaticResource blueColor}"
+               Text ="{Binding Nume, Mode=TwoWay}"/>
+
+            <Entry x:Name="PrenumeEntry" Placeholder="Prenume"
+               TextColor="{StaticResource blueColor}"
+               Text ="{Binding Prenume, Mode=TwoWay}"/>
+
+            <Entry x:Name="PhoneNumerEntry" Placeholder="Număr de telefon"
+               TextColor="{StaticResource blueColor}"
+               Text ="{Binding PhoneNumber, Mode=TwoWay}"/>
+
+            <Entry x:Name="EmailEntry" Placeholder="Email"
+               Keyboard="Email"
+               TextColor="{StaticResource blueColor}"
+               Text ="{Binding Email, Mode=TwoWay}"/>
+
+            <Entry x:Name="PasswordEntry" Placeholder="Parolă"
+               IsPassword="True" Text="{Binding Password, Mode=TwoWay}"/>
+
+            <Grid>
+                <Button x:Name="SigninButton" Text="Creează un cont"
+                Clicked="SigninButton_Clicked"
+                BackgroundColor="{StaticResource blueColor}"
+                Margin="0,50,0,0"
+                />
+            </Grid>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

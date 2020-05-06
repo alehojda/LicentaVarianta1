@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Licenta2.Views.RegiuneMontanaPage"
+             Title="{Binding Title}">
+    <StackLayout Spacing="20" Padding="15">
+
+        <Label Text="Nume" FontSize="Medium" />
+        <Label Text="{Binding RegiuneMontana.Nume}" d:Text="Item name" FontSize="Small"/>
+        <Label Text="Descriere" FontSize="Medium" />
+        <Label Text="{Binding RegiuneMontana.Descriere}" d:Text="Item description" FontSize="Small"/>
+        <RefreshView IsRefreshing="{Binding ComentariiViewModel.IsBusy, Mode=TwoWay}" Command="{Binding ComentariiViewModel.LoadComentariiCommand}">
+            <CollectionView x:Name="ItemsCollectionView" ItemsSource="{Binding ComentariiViewModel.Comentarii}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Continut}" 
+                                d:Text="Item descripton"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                            <Label Text="{Binding Data}" 
+                                d:Text="Data comentariului"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        <Label Text="Comentarii" FontSize="Medium" />
+        <Editor Text="{Binding ComentariiViewModel.ComentariuNou.Continut}"  Placeholder="Lasa un comentariu" FontSize="Small" Margin="0" />
+        <Button x:Name="SaveButton" Text="Salvează"
+                Clicked="SaveButton_ClickedAsync"
+                Margin="0,50,0,0"
+                />
+
+    </StackLayout>
+</ContentPage>
