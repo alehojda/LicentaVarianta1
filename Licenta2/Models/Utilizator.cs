@@ -12,7 +12,7 @@ namespace Licenta2.Models
         public int Id { get; set; }
         public string Nume { get; set; }
         public string Prenume { get; set; }
-        [Display (Name="Număr de telefon")]
+       
         public string PhoneNumber { get; set; }
 
         [Required]

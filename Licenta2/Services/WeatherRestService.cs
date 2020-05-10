@@ -18,16 +18,16 @@ namespace Licenta2.Models
             _client = new HttpClient();
         }
 
-        public async Task<WeatherData> GetWeatherDataAsync(string uri)
+        public async Task<WeatherForecast> GetWeatherDataAsync(string uri)
         {
-            WeatherData weatherData = null;
+            WeatherForecast weatherData = null;
             try
             {
                 HttpResponseMessage response = await _client.GetAsync(uri);
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    weatherData = JsonConvert.DeserializeObject<WeatherData>(content);
+                    weatherData = JsonConvert.DeserializeObject<WeatherForecast>(content);
                 }
             }
             catch (Exception ex)

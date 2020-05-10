@@ -13,12 +13,12 @@
     
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Nume" FontSize="Medium" />
-            <Entry Text="{Binding RegiuneMontana.Nume}" d:Text="Numele regiunii montane" FontSize="Small" />
-            <Label Text="Locatie" FontSize="Medium" />
-            <Entry Text="{Binding RegiuneMontana.Locatie}" d:Text="Cel mai apropiat oras" FontSize="Small" />
-            <Label Text="Descriere" FontSize="Medium" />
-            <Editor Text="{Binding RegiuneMontana.Descriere}" d:Text="Descriere" FontSize="Small" Margin="0" />
+            <Label Text="Name" FontSize="Medium" />
+            <Entry Text="{Binding RegiuneMontana.Nume}" d:Text="Name of the mountain" FontSize="Small" />
+            <Label Text="Location" FontSize="Medium" />
+            <Entry Text="{Binding RegiuneMontana.Locatie}" d:Text="The nearest city" FontSize="Small" />
+            <Label Text="Description" FontSize="Medium" />
+            <Editor Text="{Binding RegiuneMontana.Descriere}" d:Text="Description" FontSize="Small" Margin="0" />
         </StackLayout>
     </ContentPage.Content>
     

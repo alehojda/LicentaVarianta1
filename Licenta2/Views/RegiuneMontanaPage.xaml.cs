@@ -8,6 +8,7 @@ using Licenta2.ViewModels;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
+using Licenta2.Services;
 
 namespace Licenta2.Views
 {
@@ -18,7 +19,8 @@ namespace Licenta2.Views
     {
         RegiuneMontanaViewModel regiuneMontanaViewModel;
         Boolean mustRefresh = false;
-        
+
+
 
         public RegiuneMontanaPage(RegiuneMontanaViewModel regiuneMontanaViewModel)
         {
@@ -60,8 +62,21 @@ namespace Licenta2.Views
 
             if (mustRefresh || regiuneMontanaViewModel.ComentariiViewModel.Comentarii.Count == 0)
             {
+                regiuneMontanaViewModel.WeatherViewModel.retrieveWeatherFromAPI();
                 regiuneMontanaViewModel.ComentariiViewModel.IsBusy = true;
             }
+        }
+
+        private void LoadMoreButton_Clicked(object sender, EventArgs e)
+        {
+          
+                regiuneMontanaViewModel.WeatherViewModel.DisplayableElementsCount +=7;
+                if(regiuneMontanaViewModel.WeatherViewModel.DisplayableElementsCount >= regiuneMontanaViewModel.WeatherViewModel.WeatherData.Weather.Length - 1)
+                {
+                DisplayAlert("Attention", "No more data available", "Ok");
+                }
+                this.mustRefresh = true;
+                OnAppearing();
         }
     }
 }

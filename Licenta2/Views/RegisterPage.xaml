@@ -39,7 +39,7 @@
                IsPassword="True" Text="{Binding Password, Mode=TwoWay}"/>
 
             <Grid>
-                <Button x:Name="SigninButton" Text="Creează un cont"
+                <Button x:Name="SigninButton" Text="Register"
                 Clicked="SigninButton_Clicked"
                 BackgroundColor="{StaticResource blueColor}"
                 Margin="0,50,0,0"

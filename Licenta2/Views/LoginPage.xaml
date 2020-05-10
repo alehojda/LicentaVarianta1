@@ -23,12 +23,12 @@
                IsPassword="True"/>
 
         <Grid>
-            <Button x:Name="LoginButton" Text="Intră în cont" Grid.Column="0" 
+            <Button x:Name="LoginButton" Text="Log In" Grid.Column="0" 
                 Clicked="LoginButton_Clicked"
                 BackgroundColor="{ StaticResource blueColor}"
                 Margin="0,50,0,0"/>
 
-            <Button x:Name="SigninButton" Text="Creează un cont" Grid.Column="1" 
+            <Button x:Name="SigninButton" Text="Register" Grid.Column="1" 
                 Clicked="SigninButton_Clicked"
                 BackgroundColor="{ StaticResource blueColor}"
                 Margin="0,50,0,0"

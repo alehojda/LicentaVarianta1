@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Licenta2.Services;
+using System;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,9 +11,11 @@ namespace Licenta2.Views
     [DesignTimeVisible(false)]
     public partial class MainPage : TabbedPage
     {
+
         public MainPage()
         {
             InitializeComponent();
+
         }
     }
 }

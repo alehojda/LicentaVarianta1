@@ -8,8 +8,8 @@ namespace Licenta2.Services
     public static class Constants
     {
         //weather constants
-        public const string OpenWeatherMapEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-        public const string OpenWeatherMapAPIKey = "INSERT_API_KEY_HERE";
+        public const string OpenWeatherMapEndpoint = "https://api.openweathermap.org/data/2.5/forecast?id=";
+        public const string OpenWeatherMapAPIKey = "&units=metric&APPID=faa249fd053c0d4200be202424de5712";
 
         //db constants
         public const string DatabaseFilename = "licenta_db.db3";
