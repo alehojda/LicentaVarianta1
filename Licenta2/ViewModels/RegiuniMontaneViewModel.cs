@@ -23,7 +23,7 @@ namespace Licenta2.ViewModels
 
         }
 
-        async Task ExecuteLoadRegiuniMontaneCommand()
+        public async Task ExecuteLoadRegiuniMontaneCommand()
         {
             IsBusy = true;
 
@@ -32,6 +32,10 @@ namespace Licenta2.ViewModels
                 RegiuniMontane.Clear();
                 var regiuniMontane = await App.RegiuneMontanaDatabase.GetRegiuniMontaneAsync();
                 foreach (var regiuneMontana in regiuniMontane)
+                {
+                    RegiuniMontane.Add(regiuneMontana);
+                }
+                foreach(var regiuneMontana in RegiuniData.RegiuniDate)
                 {
                     RegiuniMontane.Add(regiuneMontana);
                 }

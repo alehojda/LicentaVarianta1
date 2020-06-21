@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Licenta2.Views.NotificationPage"
+             xmlns:vm="clr-namespace:Licenta2.ViewModels"
+             Title="{Binding Title}"
+             IconImageSource="person.png">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding ReloadCommand}">
+    <StackLayout Margin="0,35,0,0"
+                 x:Name="stackLayout">
+            <Label Text="Notifications and alerts" FontSize="20"/>
+
+        </StackLayout>
+    </RefreshView>
+
+</ContentPage>

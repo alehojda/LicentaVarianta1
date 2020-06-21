@@ -536,3 +536,12 @@ C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\drawable\m
 C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\android\assets\System.ComponentModel.Annotations.dll
 C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\android\assets\System.ComponentModel.DataAnnotations.dll
 C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\android\assets\System.ComponentModel.DataAnnotations.pdb
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\drawable\empty.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\mipmap-hdpi\empty.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\mipmap-xhdpi\empty.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\mipmap-xhdpi\full.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\mipmap-hdpi\full.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\drawable\full.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\drawable\alert.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\mipmap-hdpi\alert.png
+C:\Users\Nina\source\repos\Licenta2\Licenta2.Android\obj\Debug\90\res\mipmap-xhdpi\alert.png

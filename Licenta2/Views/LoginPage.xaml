@@ -10,31 +10,31 @@
             <Color x:Key="blueColor">#1E90FF</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <StackLayout VerticalOptions="Center"
+    <ScrollView>
+        <StackLayout VerticalOptions="Center"
                  Margin="20" >
-        <Image x:Name="iconImage" 
+            <Image x:Name="iconImage" 
                Aspect="AspectFit"
                HorizontalOptions="FillAndExpand"
                Margin="0, 0 , 0, 50"/>
-        <Entry x:Name="EmailEntry" Placeholder="Email address"
+            <Entry x:Name="EmailEntry" Placeholder="Email address"
                Keyboard="Email"
                TextColor="{StaticResource blueColor}"/>
-        <Entry x:Name="PasswordEntry" Placeholder="Password"
+            <Entry x:Name="PasswordEntry" Placeholder="Password"
                IsPassword="True"/>
 
-        <Grid>
-            <Button x:Name="LoginButton" Text="Log In" Grid.Column="0" 
+            <Grid>
+                <Button x:Name="LoginButton" Text="Log In" Grid.Column="0" 
                 Clicked="LoginButton_Clicked"
                 BackgroundColor="{ StaticResource blueColor}"
                 Margin="0,50,0,0"/>
 
-            <Button x:Name="SigninButton" Text="Register" Grid.Column="1" 
+                <Button x:Name="SigninButton" Text="Register" Grid.Column="1" 
                 Clicked="SigninButton_Clicked"
                 BackgroundColor="{ StaticResource blueColor}"
                 Margin="0,50,0,0"
                 />
-        </Grid>
-
-
-    </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

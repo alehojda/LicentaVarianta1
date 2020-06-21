@@ -21,7 +21,6 @@ namespace Licenta2.Models
 
         [Required]
         [DataType(DataType.Password)]
-        [StringLength(12, MinimumLength = 4, ErrorMessage = "Dimensiunea parolei trebuie să fie mai mare de 4 caractere!")]
         public string Password { get; set; }
        
     }

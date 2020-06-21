@@ -59,6 +59,7 @@ namespace Licenta2
         {
             InitializeComponent();
 
+            DependencyService.Get<INotificationManager>().Initialize();
 
             MainPage = new NavigationPage(new LoginPage());
 
@@ -70,10 +71,12 @@ namespace Licenta2
 
         protected override void OnSleep()
         {
+            var a = true;
         }
 
         protected override void OnResume()
         {
+            var a = false;
         }
     }
 }

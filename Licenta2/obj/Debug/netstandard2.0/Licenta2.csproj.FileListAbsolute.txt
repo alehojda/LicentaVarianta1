@@ -15,6 +15,6 @@ C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Licenta2.p
 C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Views\NewRegiuneMontanaPage.xaml.g.cs
 C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Views\RegiuneMontanaPage.xaml.g.cs
 C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Views\RegiuniMontanePage.xaml.g.cs
-C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Views\UserPage.xaml.g.cs
 C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Licenta2.csproj.CoreCompileInputs.cache
 C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Nina\source\repos\Licenta2\Licenta2\obj\Debug\netstandard2.0\Views\NotificationPage.xaml.g.cs

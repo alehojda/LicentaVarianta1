@@ -11,11 +11,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\01d.png" />
+    <None Remove="Assets\Images\01n.png" />
+    <None Remove="Assets\Images\02d.png" />
+    <None Remove="Assets\Images\02n.png" />
+    <None Remove="Assets\Images\03d.png" />
+    <None Remove="Assets\Images\03n.png" />
+    <None Remove="Assets\Images\04d.png" />
+    <None Remove="Assets\Images\04n.png" />
+    <None Remove="Assets\Images\09d.png" />
+    <None Remove="Assets\Images\09n.png" />
+    <None Remove="Assets\Images\10d.png" />
+    <None Remove="Assets\Images\10n.png" />
+    <None Remove="Assets\Images\11d.png" />
+    <None Remove="Assets\Images\11n.png" />
     <None Remove="Assets\Images\logo1.jpg" />
     <None Remove="Assets\Images\logo2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\01d.png" />
+    <EmbeddedResource Include="Assets\Images\01n.png" />
+    <EmbeddedResource Include="Assets\Images\02d.png" />
+    <EmbeddedResource Include="Assets\Images\02n.png" />
+    <EmbeddedResource Include="Assets\Images\03d.png" />
+    <EmbeddedResource Include="Assets\Images\03n.png" />
+    <EmbeddedResource Include="Assets\Images\04d.png" />
+    <EmbeddedResource Include="Assets\Images\04n.png" />
+    <EmbeddedResource Include="Assets\Images\09d.png" />
+    <EmbeddedResource Include="Assets\Images\09n.png" />
+    <EmbeddedResource Include="Assets\Images\10d.png" />
+    <EmbeddedResource Include="Assets\Images\10n.png" />
+    <EmbeddedResource Include="Assets\Images\11d.png" />
+    <EmbeddedResource Include="Assets\Images\11n.png" />
     <EmbeddedResource Include="Assets\Images\logo1.jpg" />
     <EmbeddedResource Include="Assets\Images\logo2.jpg" />
   </ItemGroup>
@@ -40,8 +68,8 @@
     <Compile Update="Views\RegiuneMontanaPage.xaml.cs">
       <DependentUpon>RegiuneMontanaPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\UserPage.xaml.cs">
-      <DependentUpon>UserPage.xaml</DependentUpon>
+    <Compile Update="Views\NotificationPage.xaml.cs">
+      <DependentUpon>NotificationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

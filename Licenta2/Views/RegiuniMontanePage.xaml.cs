@@ -25,6 +25,10 @@ namespace Licenta2.Views
             InitializeComponent();
 
             BindingContext = viewModel = new RegiuniMontaneViewModel();
+            //var assembly = typeof(RegiuniMontanePage);
+            //if (favorit)
+            //starIcon.Source = ImageSource.FromResource("empty.png", assembly);
+
         }
 
         async void OnItemSelected(object sender, EventArgs args)

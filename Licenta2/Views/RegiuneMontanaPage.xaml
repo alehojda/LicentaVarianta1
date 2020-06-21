@@ -29,20 +29,22 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ScrollView>
-    <StackLayout Spacing="20" Padding="15">
+    <StackLayout Spacing="5" Padding="5">
             
         <Label Text="Name" FontSize="Medium" />
         <Label Text="{Binding RegiuneMontana.Nume}" d:Text="Item name" FontSize="Small"/>
         <Label Text="Description" FontSize="Medium" />
             <Label Text="{Binding RegiuneMontana.Descriere}" d:Text="Item description" FontSize="Small"/>
+            <Label Text="Favorite" FontSize="Medium"/>
+            <CheckBox IsChecked="{Binding RegiuneMontana.favorit, Mode=TwoWay}" />
             <CollectionView x:Name="WeatherCollectionView" ItemsSource="{Binding WeatherViewModel.WeatherForecast}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Padding="10">
-                                <Grid Margin="20,35,20,20">
+                            <StackLayout Padding="5">
+                                <Grid Margin="5,5,5,5">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.4*" />
-                                        <ColumnDefinition Width="0.6*" />
+                                        <ColumnDefinition Width="0.5*" />
+                                        <ColumnDefinition Width="0.5*" />
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="40" />
@@ -65,6 +67,7 @@
                                        FontSize="18" />
                                     <Label Grid.Row="4" Text="Clouds:" />
                                     <Label Grid.Row="4" Grid.Column="1" Text="{Binding Weather[0].Conditions}" />
+                                    <Image Source="{Binding Weather[0].IconSource}"/>
                                     <Label Grid.Row="5" Text="Wind Speed:" />
                                     <Label Grid.Row="5" Grid.Column="1" Text="{Binding Wind.Speed}" />
                                     <Label Grid.Row="6" Text="Humidity:" />
@@ -84,7 +87,7 @@
             <CollectionView x:Name="ItemsCollectionView" ItemsSource="{Binding ComentariiViewModel.Comentarii}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Padding="10">
+                        <StackLayout Padding="5">
                             <Label Text="{Binding Continut}" 
                                 d:Text="Item descripton"
                                 LineBreakMode="NoWrap"
@@ -100,8 +103,8 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </RefreshView>
-        <Label Text="Comments" FontSize="Medium" />
-        <Editor Text="{Binding ComentariiViewModel.ComentariuNou.Continut}"  Placeholder="Leave a comment" FontSize="Small" Margin="0" />
+        <Label Text="Notes" FontSize="Medium" />
+        <Editor Text="{Binding ComentariiViewModel.ComentariuNou.Continut}"  Placeholder="Add a note" FontSize="Small" Margin="0" />
         <Button x:Name="SaveButton" Text="Save"
                 Clicked="SaveButton_ClickedAsync"
                 Margin="0,50,0,0" />

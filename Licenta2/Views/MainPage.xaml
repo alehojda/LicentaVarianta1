@@ -6,7 +6,7 @@
             mc:Ignorable="d"
             xmlns:views="clr-namespace:Licenta2.Views"
             x:Class="Licenta2.Views.MainPage">
-
+    
     <TabbedPage.Children>
         <NavigationPage IconImageSource="munti.png">
             <x:Arguments>
@@ -14,9 +14,9 @@
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage IconImageSource="person.png">
+        <NavigationPage IconImageSource="alert.png">
             <x:Arguments>
-                <views:UserPage />
+                <views:NotificationPage />
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>

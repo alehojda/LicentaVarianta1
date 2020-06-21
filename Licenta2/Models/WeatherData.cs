@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Licenta2.Views;
 using Newtonsoft.Json;
-
+using Xamarin.Forms;
 
 namespace Licenta2.Models
 {
@@ -38,6 +39,19 @@ namespace Licenta2.Models
 
         [JsonProperty("description")]
         public string ConditionsDetails { get; set; }
+
+        [JsonProperty("icon")]
+        public string Icon { get; set; }
+        public ImageSource _IconSource;
+        public ImageSource IconSource
+        {
+            get {
+                var assembly = typeof(RegiuneMontanaPage);
+                return Xamarin.Forms.ImageSource.FromResource("Licenta2.Assets.Images." + this.Icon + ".png", assembly); }
+            set {
+                var assembly = typeof(RegiuneMontanaPage);
+                _IconSource = ImageSource.FromResource("Licenta2.Assets.Images." + this.Icon + ".png", assembly); }
+        }
     }
 
     public class Wind

@@ -19,10 +19,10 @@ namespace Licenta2.ViewModels
             this.locationId = locationId;
             this.WeatherData = null;
             WeatherForecast = new ObservableCollection<WeatherData>();
-            getWeatherAsync();
+            _ = getWeatherAsync();
         }
 
-        public async void getWeatherAsync()
+        public async Task getWeatherAsync()
         {
             WeatherRestService weatherRestService = new WeatherRestService();
             string weatherUri = Constants.OpenWeatherMapEndpoint + locationId + Constants.OpenWeatherMapAPIKey;
